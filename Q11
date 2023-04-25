@@ -1,0 +1,10 @@
+num = input("Digite uma lista de números: ").split()
+num = [int(num) for num in num]
+
+impares = []
+
+for num in num:
+    if num % 2 != 0:
+        impares.append(num)
+
+print(f"Os números impares da lista são: {impares}")
