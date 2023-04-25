@@ -1,0 +1,14 @@
+num = input("Digite uma lista de números: ").split()
+num = [int(num) for num in num]
+
+maior_n = num[0]
+menor_n = num[0]
+
+for num in num:
+    if num > maior_n:
+        maior_n = num
+    elif num < menor_n:
+        menor_n = num
+
+print(f"O maior número é: {maior_n}")
+print(f"O menor número é: {menor_n}")
