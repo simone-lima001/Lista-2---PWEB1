@@ -1,0 +1,7 @@
+num = input("Digite uma lista de números : ").split()
+num = [int(num) for num in num]
+
+soma = sum(num)
+media = soma / len(num)
+
+print(f"A média dos números é:{media}")
